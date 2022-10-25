@@ -115,7 +115,6 @@ filegroup(
   http_archive(
     name="clang-llvm-13.0.0-aarch64-linux-gnu",
     build_file="@llvm//:llvm_linux.BUILD",
-    sha256="2c2fb857af97f41a5032e9ecadf7f78d3eff389a5cd3c9ec620d24f134ceb3c8",
     strip_prefix="clang+llvm-13.0.0-aarch64-linux-gnu",
     urls=[
       "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-aarch64-linux-gnu.tar.xz"
