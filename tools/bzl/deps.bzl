@@ -75,10 +75,9 @@ filegroup(
   http_archive(
     name="clang-llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04",
     build_file="@llvm//:llvm_linux.BUILD",
-    sha256="cc99fda45b4c740f35d0a367985a2bf55491065a501e2dd5d1ad3f97dcac89da",
     strip_prefix="clang+llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04",
     urls=[
-      "https://releases.llvm.org/6.0.0/clang+llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz"
+      "https://releases.llvm.org/6.0.0/clang+llvm-6.0.0-aarch64-linux-gnu.tar.xz"
     ],
   )
 
@@ -95,10 +94,9 @@ filegroup(
   http_archive(
     name="clang-llvm-10.0.0-x86_64-linux-gnu-ubuntu-18.04",
     build_file="@llvm//:llvm_linux.BUILD",
-    sha256="b25f592a0c00686f03e3b7db68ca6dc87418f681f4ead4df4745a01d9be63843",
-    strip_prefix="clang+llvm-10.0.0-x86_64-linux-gnu-ubuntu-18.04",
+    strip_prefix="clang+llvm-10.0.0-aarch64-linux-gnu",
     urls=[
-      "https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/clang+llvm-10.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz"
+      "https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/clang+llvm-10.0.0-aarch64-linux-gnu.tar.xz"
     ],
   )
 
