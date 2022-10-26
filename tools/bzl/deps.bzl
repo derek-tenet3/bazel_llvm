@@ -75,7 +75,7 @@ filegroup(
   http_archive(
     name="clang-llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04",
     build_file="@llvm//:llvm_linux.BUILD",
-    strip_prefix="clang+llvm-6.0.0-x86_64-linux-gnu-ubuntu-16.04",
+    strip_prefix="clang+llvm-6.0.0-aarch64-linux-gnu",
     urls=[
       "https://releases.llvm.org/6.0.0/clang+llvm-6.0.0-aarch64-linux-gnu.tar.xz"
     ],
