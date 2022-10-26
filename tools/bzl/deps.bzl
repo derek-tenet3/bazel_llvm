@@ -112,7 +112,7 @@ filegroup(
     ],
   )
   
-   http_archive(
+  http_archive(
     name="clang-llvm-10.0.0-aarch64-linux-gnu",
     build_file="@llvm//:llvm_linux.BUILD",
     strip_prefix="clang+llvm-10.0.0-aarch64-linux-gnu",
