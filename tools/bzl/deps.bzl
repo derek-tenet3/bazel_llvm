@@ -99,6 +99,16 @@ filegroup(
       "https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/clang+llvm-10.0.0-aarch64-linux-gnu.tar.xz"
     ],
   )
+  
+  
+  http_archive(
+    name="clang-llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04",
+    build_file="@llvm//:llvm_linux.BUILD",
+    strip_prefix="clang+llvm-13.0.0-aarch64-linux-gnu",
+    urls=[
+      "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-aarch64-linux-gnu.tar.xz"
+    ],
+  )
 
   http_archive(
     name="clang-llvm-13.0.0-x86_64-apple-darwin",
