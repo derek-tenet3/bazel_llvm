@@ -55,10 +55,9 @@ filegroup(
   http_archive(
     name="clang-llvm-3.8.0-x86_64-linux-gnu-ubuntu-16.04",
     build_file="@llvm//:llvm_linux.BUILD",
-    sha256="866dda64c990e1489f8da40237f9cd96f4f57ffdc110f0b277bf9965d13b688b",
-    strip_prefix="clang+llvm-3.8.0-x86_64-linux-gnu-ubuntu-16.04",
+    strip_prefix="clang+llvm-3.8.0-aarch64-linux-gnu",
     urls=[
-      "https://releases.llvm.org/3.8.0/clang+llvm-3.8.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz",
+      "https://releases.llvm.org/3.8.0/clang+llvm-3.8.0-aarch64-linux-gnu.tar.xz",
     ],
   )
 
