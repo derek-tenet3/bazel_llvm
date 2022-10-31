@@ -8,7 +8,7 @@ cc_library(
     data = select({
         "//:darwin": ["@clang-llvm-13.0.0-x86_64-apple-darwin//:libdir"],
         "//conditions:default": [
-            "@clang-llvm-13.0.0-aarch64-linux-gnu//:libdir",
+            "@clang-llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04//:libdir",
         ],
     }),
     defines = [
@@ -24,8 +24,8 @@ cc_library(
             "-Wl,-headerpad_max_install_names",
         ],
         "//conditions:default": [
-            "-Wl,-rpath,$(location @clang-llvm-13.0.0-aarch64-linux-gnu//:libdir)/",
-            "-L$(location @clang-llvm-13.0.0-aarch64-linux-gnu//:libdir)/",
+            "-Wl,-rpath,$(location @clang-llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04//:libdir)/",
+            "-L$(location @clang-llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04//:libdir)/",
         ],
     }) + select({
         # llvm-config --system-libs
